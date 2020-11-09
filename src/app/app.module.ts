@@ -2,12 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Injector, NgModule } from '@angular/core';
 import {createCustomElement} from '@angular/elements';
 
-import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     HelloWorldComponent
   ],
   imports: [
@@ -15,7 +13,6 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
   ],
   entryComponents: [HelloWorldComponent],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(injector: Injector) {
